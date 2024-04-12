@@ -1,0 +1,74 @@
+.container {
+    margin: 48px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.line {
+    width: 40%;
+    height: 2px;
+    background-color: orange;
+    /* Màu cam */
+    margin-bottom: 20px;
+}
+
+.main-title {
+    margin: 5%;
+    width: 30%;
+}
+
+.title {
+    margin-top: 29px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 48px;
+    letter-spacing: -0.29px;
+}
+
+.content-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.content-item {
+    margin: 5%;
+    width: 40%;
+}
+
+.content-title {
+    margin-top: 29px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -0.29px;
+}
+
+.content-desc {
+    font-size: 18px;
+    margin-top: 7px;
+    line-height: 24px;
+    letter-spacing: -0.14px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 1024px) {
+    .main-title {
+        width: 100%;
+    }
+
+    .content-list {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-title {
+        width: 100%;
+    }
+
+    .content-item {
+        width: 100%;
+    }
+}
