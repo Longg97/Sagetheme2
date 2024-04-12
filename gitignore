@@ -1,0 +1,13 @@
+/*
+!.gitignore
+!wp-content/!docker-compose.develop.yml
+wp-content/uploads
+wp-content/cache
+!wp-content/
+!.dockerignore
+!lighthouserc.json
+!sonar-project.properties
+!docker-compose.develop.yml
+!.dockerignore
+!lighthouserc.json
+!sonar-project.properties
