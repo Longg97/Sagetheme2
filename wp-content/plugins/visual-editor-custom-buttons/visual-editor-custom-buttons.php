@@ -3,7 +3,7 @@
 Plugin Name: Visual Editor Custom Buttons
 Plugin URI: http://eborninteractive.se
 Description: Create custom buttons in Wordpress Visual Editor.
-Version: 1.5.2.3
+Version: 1.6.0.3
 Author: Ola Eborn
 Author URI: http://eborninteractive.se
 Text Domain: visual-editor-custom-buttons
@@ -95,7 +95,7 @@ function vecb_settings() { ?>
   $roles = $wp_roles->get_names();
   
   $accessvalue = array();
- 
+  $count = 0;
   
   foreach ($roles as $role) :
   $accessvalue[$role] = get_option('vecb_access_'.$role);
@@ -242,16 +242,16 @@ $style = '@charset "UTF-8";
 while ( $loop->have_posts() ) : $loop->the_post(); 
 
 
-$id = get_the_ID();
+$postid = get_the_ID();
 $count ++;
-$custom = get_post_custom($post->ID);
-$left_tag = $custom["left_tag"][0];
-$right_tag = $custom["right_tag"][0];
-$styling = $custom["styling_content"][0];
-$selection = $custom["content-type"][0];
-$block_content = $custom["block_content"][0];
-$icon = $custom["icon"][0];
-$custom_icon = $custom["custom_icon"][0];
+$custom = get_post_custom($postid);
+$left_tag = $custom["left_tag"][0] ?? "";
+$right_tag = $custom["right_tag"][0] ?? "";
+$styling = $custom["styling_content"][0] ?? "";
+$selection = $custom["content-type"][0] ?? "";
+$block_content = $custom["block_content"][0] ?? "";
+$icon = $custom["icon"][0] ?? "";
+$custom_icon = $custom["custom_icon"][0] ?? "";
 	
 	if ($custom_icon) {
 		$icon = $custom_icon;
@@ -268,8 +268,7 @@ $blog_id = get_current_blog_id();
 
 $file = WP_PLUGIN_DIR. '/visual-editor-custom-buttons/js/button-'.$blog_id.'-'.$count.'.js';
 
-
-$current = file_get_contents($file);
+$current = file_exists($file) ? file_get_contents($file) : "";
 
 
 /************************************************************************
@@ -287,9 +286,13 @@ $icon = substr($icon, 1);
 $custom= true;	
 }
 
-$uploads = wp_upload_dir();
-	$uploaddir = $uploads['basedir']."/vecb/";
-	$uploadurl = $uploads['baseurl']."/vecb/";
+	$uploads = wp_upload_dir();
+	
+	$uploads_basedir = $uploads['basedir'] ?? "";
+	$uploads_baseurl = $uploads['baseurl'] ?? "";
+
+	$uploaddir = $uploads_basedir."/vecb/";
+	$uploadurl = $uploads_baseurl."/vecb/";
 
 $current = "// JavaScript Document
 
@@ -329,9 +332,13 @@ $icon = substr($icon, 1);
 $custom= true;	
 }
 
-$uploads = wp_upload_dir();
-	$uploaddir = $uploads['basedir']."/vecb/";
-	$uploadurl = $uploads['baseurl']."/vecb/";
+	$uploads = wp_upload_dir();
+	
+	$uploads_basedir = $uploads['basedir'] ?? "";
+	$uploads_baseurl = $uploads['baseurl'] ?? "";
+
+	$uploaddir = $uploads_basedir."/vecb/";
+	$uploadurl = $uploads_baseurl."/vecb/";
 	
 $current = "// JavaScript Document
 
@@ -559,11 +566,11 @@ function vecb_tag_options() {
 	
 	global $post;
     $custom = get_post_custom($post->ID);
-	$left_tag = $custom["left_tag"][0];
-	$right_tag = $custom["right_tag"][0];
-	$block_content = $custom["block_content"][0];
+	$left_tag = $custom["left_tag"][0] ?? "";
+	$right_tag = $custom["right_tag"][0] ?? "";
+	$block_content = $custom["block_content"][0] ?? "";
 	
-	$radio = $custom["content-type"][0];
+	$radio = $custom["content-type"][0] ?? "";
 	
 
 	if ($radio == "wrap" || $radio == NULL) {
@@ -595,14 +602,17 @@ function vecb_tag_options() {
 
 function vecb_editor_options() {
 	
+	$customicons = array();
+	$custom_icon = "";
+	
 	
 	global $post;
     $custom = get_post_custom($post->ID);
-	$rich_editor = $custom["rich_editor"][0];
-	$html_editor = $custom["html_editor"][0];
-	$icon = $custom["icon"][0];
-	$custom_icon = $custom["custom_icon"][0];
-	$quicktag = $custom["quicktag"][0];
+	$rich_editor = $custom["rich_editor"][0] ?? "";
+	$html_editor = $custom["html_editor"][0] ?? "";
+	$icon = $custom["icon"][0] ?? "";
+	$custom_icon = $custom["custom_icon"][0] ?? "";
+	$quicktag = $custom["quicktag"][0] ?? "";
 	
 	if ($custom_icon) {
 		$icon = $custom_icon;
@@ -617,8 +627,13 @@ function vecb_editor_options() {
 	$dir = WP_PLUGIN_DIR."/visual-editor-custom-buttons/js/icons/";
 	
 	$uploads = wp_upload_dir();
-	$uploaddir = $uploads['basedir']."/vecb/";
-	$uploadurl = $uploads['baseurl']."/vecb/";
+	$uploadfiles = "";
+	
+	$uploads_basedir = $uploads['basedir'] ?? "";
+	$uploads_baseurl = $uploads['baseurl'] ?? "";
+
+	$uploaddir = $uploads_basedir."/vecb/";
+	$uploadurl = $uploads_baseurl."/vecb/";
 	
 	
 	if(is_dir($uploaddir)){
@@ -829,7 +844,7 @@ function vecb_styling_options() {
 	
 	global $post;
     $custom = get_post_custom($post->ID);
-	$styling = $custom["styling_content"][0];
+	$styling = $custom["styling_content"][0] ?? "";
 	$content = '<section class="recb_inputblock"><div class="vecb_label">CSS</div>
 	<div class="vecb_desc">Only for visualization in the Visual Editor. Use normal stylesheet for Front End styling.</div>
 	<textarea name="styling_content" id="styling_content" cols="45" rows="5">' . $styling  . '</textarea></section>';
@@ -881,17 +896,17 @@ $style = '@charset "UTF-8";
 while ( $loop->have_posts() ) : $loop->the_post(); 
 
 
-$id = get_the_ID();
+$postid = get_the_ID();
 $count ++;
-$custom = get_post_custom($post->ID);
-$left_tag = $custom["left_tag"][0];
-$right_tag = $custom["right_tag"][0];
-$styling = $custom["styling_content"][0];
-$selection = $custom["content-type"][0];
-$block_content = $custom["block_content"][0];
-$icon = $custom["icon"][0];
-$custom_icon = $custom["custom_icon"][0];
-$rownr = $custom["row"][0];
+$custom = get_post_custom($postid);
+$left_tag = $custom["left_tag"][0] ?? "";
+$right_tag = $custom["right_tag"][0] ?? "";
+$styling = $custom["styling_content"][0] ?? "";
+$selection = $custom["content-type"][0] ?? "";
+$block_content = $custom["block_content"][0] ?? "";
+$icon = $custom["icon"][0] ?? "";
+$custom_icon = $custom["custom_icon"][0] ?? "";
+$rownr = $custom["row"][0] ?? "";
 	
 	if ($custom_icon) {
 		$icon = $custom_icon;
@@ -928,9 +943,13 @@ $icon = substr($icon, 1);
 $custom= true;	
 }
 
-$uploads = wp_upload_dir();
-	$uploaddir = $uploads['basedir']."/vecb/";
-	$uploadurl = $uploads['baseurl']."/vecb/";
+	$uploads = wp_upload_dir();
+	
+	$uploads_basedir = $uploads['basedir'] ?? "";
+	$uploads_baseurl = $uploads['baseurl'] ?? "";
+
+	$uploaddir = $uploads_basedir."/vecb/";
+	$uploadurl = $uploads_baseurl."/vecb/";
 
 $current = "// JavaScript Document
 
@@ -970,9 +989,13 @@ $icon = substr($icon, 1);
 $custom= true;	
 }
 
-$uploads = wp_upload_dir();
-	$uploaddir = $uploads['basedir']."/vecb/";
-	$uploadurl = $uploads['baseurl']."/vecb/";
+	$uploads = wp_upload_dir();
+	
+	$uploads_basedir = $uploads['basedir'] ?? "";
+	$uploads_baseurl = $uploads['baseurl'] ?? "";
+
+	$uploaddir = $uploads_basedir."/vecb/";
+	$uploadurl = $uploads_baseurl."/vecb/";
 	
 $current = "// JavaScript Document
 
@@ -1052,15 +1075,18 @@ if( !function_exists('_add_my_quicktags') ){
 
 $loop = new WP_Query( $args );
 
+$count = 0;
+
 while ( $loop->have_posts() ) : $loop->the_post(); 
 
-$custom = get_post_custom($post->ID);
-$left_tag = $custom["left_tag"][0];
-$right_tag = $custom["right_tag"][0];
-$quicktag = $custom["quicktag"][0];
-$html = $custom["html_editor"][0];
-$radio = $custom["content-type"][0];
-$block_content = $custom["block_content"][0];
+$postid = get_the_ID();
+$custom = get_post_custom($postid);
+$left_tag = $custom["left_tag"][0] ?? "";
+$right_tag = $custom["right_tag"][0] ?? "";
+$quicktag = $custom["quicktag"][0] ?? "";
+$html = $custom["html_editor"][0] ?? "";
+$radio = $custom["content-type"][0] ?? "";
+$block_content = $custom["block_content"][0] ?? "";
 $count++;
 
 
@@ -1148,6 +1174,7 @@ function vecb_register_button( $buttons ) {
 
 $count_posts = wp_count_posts('vecb_editor_buttons');
 $count_posts = $count_posts->publish;
+$count = 0;
 
 for ($i=0;$i<$count_posts;$i++) {
 $count ++;
@@ -1166,6 +1193,7 @@ function vecb_add_plugin( $plugin_array ) {
 	
 $count_posts = wp_count_posts('vecb_editor_buttons');
 $count_posts = $count_posts->publish;
+$count = 0;
 
  $url = plugins_url()."/visual-editor-custom-buttons";
  

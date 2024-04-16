@@ -1,11 +1,13 @@
-<?php
+<?php declare(strict_types = 1);
 /**
  * 'Debug Bar' output for HTML pages.
  *
  * @package query-monitor
  */
 
-defined( 'ABSPATH' ) || exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class QM_Output_Html_Debug_Bar extends QM_Output_Html {
 
@@ -21,18 +23,25 @@ class QM_Output_Html_Debug_Bar extends QM_Output_Html {
 		add_filter( 'qm/output/menus', array( $this, 'admin_menu' ), 200 );
 	}
 
+	/**
+	 * @return string
+	 */
 	public function name() {
-		$title = $this->collector->get_panel()->title();
-
-		return sprintf(
-			/* translators: Debug Bar add-on name */
-			__( 'Debug Bar: %s', 'query-monitor' ),
-			$title
-		);
+		/** @var string */
+		return $this->collector->get_panel()->title();
 	}
 
+	/**
+	 * @return void
+	 */
 	public function output() {
-		$target = sanitize_html_class( get_class( $this->collector->get_panel() ) );
+		$class = get_class( $this->collector->get_panel() );
+
+		if ( ! $class ) {
+			return;
+		}
+
+		$target = sanitize_html_class( $class );
 
 		$this->before_debug_bar_output();
 
@@ -40,7 +49,7 @@ class QM_Output_Html_Debug_Bar extends QM_Output_Html {
 
 		ob_start();
 		$this->collector->render();
-		$panel = ob_get_clean();
+		$panel = (string) ob_get_clean();
 
 		$panel = str_replace( array(
 			'<h4',
@@ -71,6 +80,11 @@ class QM_Output_Html_Debug_Bar extends QM_Output_Html {
 
 }
 
+/**
+ * @param array<string, QM_Output> $output
+ * @param QM_Collectors $collectors
+ * @return array<string, QM_Output>
+ */
 function register_qm_output_html_debug_bar( array $output, QM_Collectors $collectors ) {
 	global $debug_bar;
 
@@ -79,7 +93,14 @@ function register_qm_output_html_debug_bar( array $output, QM_Collectors $collec
 	}
 
 	foreach ( $debug_bar->panels as $panel ) {
-		$panel_id  = strtolower( sanitize_html_class( get_class( $panel ) ) );
+		$class = get_class( $panel );
+
+		if ( ! $class ) {
+			continue;
+		}
+
+		$panel_id = strtolower( sanitize_html_class( $class ) );
+		/** @var QM_Collector_Debug_Bar|null */
 		$collector = QM_Collectors::get( "debug_bar_{$panel_id}" );
 
 		if ( $collector && $collector->is_visible() ) {

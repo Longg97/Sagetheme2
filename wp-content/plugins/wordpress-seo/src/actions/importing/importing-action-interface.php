@@ -2,10 +2,9 @@
 
 namespace Yoast\WP\SEO\Actions\Importing;
 
-use Yoast\WP\SEO\Actions\Indexing\Indexation_Action_Interface;
 use Yoast\WP\SEO\Actions\Indexing\Limited_Indexing_Action_Interface;
 
-interface Importing_Action_Interface extends Indexation_Action_Interface, Limited_Indexing_Action_Interface {
+interface Importing_Action_Interface extends Importing_Indexation_Action_Interface, Limited_Indexing_Action_Interface {
 
 	/**
 	 * Returns the name of the plugin we import from.
@@ -20,4 +19,14 @@ interface Importing_Action_Interface extends Indexation_Action_Interface, Limite
 	 * @return string The type of data.
 	 */
 	public function get_type();
+
+	/**
+	 * Whether or not this action is capable of importing given a specific plugin and type.
+	 *
+	 * @param string|null $plugin The name of the plugin being imported.
+	 * @param string|null $type   The component of the plugin being imported.
+	 *
+	 * @return bool True if the action can import the given plugin's data of the given type.
+	 */
+	public function is_compatible_with( $plugin = null, $type = null );
 }

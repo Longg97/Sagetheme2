@@ -2,10 +2,10 @@
 Contributors: cyberduck
 Donate link: 
 Tags: visual editor, rich editor, tiny mce editor, buttons, custom, quicktag, html editor, tinymce, customize
-Requires at least: 4.7
-Tested up to: 5.0.3
-Stable tag: 1.5.2.3
-Version: 1.5.2.3
+Requires at least: 4.9
+Tested up to: 6.2.2
+Stable tag: 1.6.0.3
+Version: 1.6.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,17 +25,6 @@ Visual Editor Custom Buttons. The perfect plugin for customizing the Visual Edit
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Administer the buttons from the Admin Menu - "Visual Editor Custom Buttons".
 
-*ATTENTION*
-
-You may encounter an Error message right after installation. This will only appear once and will not be repeated. I havn´t found a solution yet to avoid it from showing up. Any tips on how to get rid of it is higly appreciated.
- 
-If your prior version was 1.0, backup own added custom icons before upgrading. They will be deleted.
-
-*ATTENTION* 
-When upgrading to version 1.4 an angry error message about a js-path that doesn´t exist will appear. This has to do with a change in the way the js-files are named, to make it work in a network invironment. Just ignore this message, it will only appear once. If it for some reason still comes up, resave your buttons and it will definately not bother you again.
-
-
-
 == Frequently asked questions ==
 
 = Where do I set which row my buttons will appear? =
@@ -49,8 +38,6 @@ This strange behavior with disappearing code may come up when you have pasted co
 About the Button CSS not visible in the Visual Editor (you can´t se any effect of the button in the Visual Editor). Cleaning the Browsers Cache should do the trick.
 
 
-
-
 == Screenshots ==
 
 1. Example of a Simple Button function. A Felt Marker. Just add a simple span-tag with a class. Then add the CSS to the class.
@@ -61,6 +48,20 @@ About the Button CSS not visible in the Visual Editor (you can´t se any effect 
 
 
 == Changelog ==
+
+= 1.6.0.3 =
+* More bug fixed for php8
+
+= 1.6.0.2 =
+* Bug fixed for php8
+
+= 1.6.0.1 =
+* Bug fixed not able to load js-button-file
+
+= 1.6 =
+* Prepared for php8
+* Prepared for Language translations
+* Default Square Meter Icon Added
 
 = 1.5.2.3 =
 * count()-warning error fixed for php 7.x
@@ -136,22 +137,3 @@ About the Button CSS not visible in the Visual Editor (you can´t se any effect 
 
 = 0.91 =
 * Added Resize Handle to the Single Block Textarea
-
-
-
-
-== Upgrade notice ==
-
-*ATTENTION* 
-If your prior version was 1.0, backup own added custom icons before upgrading. They will be deleted.
-
-When upgrading to version 1.4 an angry error message about a js-path that doesn´t exist will appear. This has to do with a change in the way the js-files are named, to make it work in a network invironment. Just ignore this message, it will only appear once. If it for some reason still comes up, resave your buttons and it will definately not bother you again.
-
-
-== Arbitrary section 1 ==
-
-*ATTENTION* 
-If your prior version was 1.0, backup own added custom icons before upgrading. They will be deleted.
-
-*ATTENTION* 
-When upgrading to version 1.4 an angry error message about a js-path that doesn´t exist will appear. This has to do with a change in the way the js-files are named, to make it work in a network invironment. Just ignore this message, it will only appear once. If it for some reason still comes up, resave your buttons and it will definately not bother you again.

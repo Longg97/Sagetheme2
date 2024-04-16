@@ -1,51 +1,78 @@
-<?php
+<?php declare(strict_types = 1);
 /**
  * Mock 'Debug Bar' data collector.
  *
  * @package query-monitor
  */
 
-defined( 'ABSPATH' ) || exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 final class QM_Collector_Debug_Bar extends QM_Collector {
 
-	public $id     = 'debug_bar';
+	/**
+	 * @var string
+	 */
+	public $id = 'debug_bar';
+
+	/**
+	 * @var Debug_Bar_Panel|null
+	 */
 	private $panel = null;
 
+	/**
+	 * @param Debug_Bar_Panel $panel
+	 * @return void
+	 */
 	public function set_panel( Debug_Bar_Panel $panel ) {
 		$this->panel = $panel;
 	}
 
+	/**
+	 * @return Debug_Bar_Panel|null
+	 */
 	public function get_panel() {
 		return $this->panel;
 	}
 
+	/**
+	 * @return void
+	 */
 	public function process() {
 		$this->get_panel()->prerender();
 	}
 
+	/**
+	 * @return bool
+	 */
 	public function is_visible() {
 		return $this->get_panel()->is_visible();
 	}
 
+	/**
+	 * @return void
+	 */
 	public function render() {
-		return $this->get_panel()->render();
+		$this->get_panel()->render();
 	}
 
 }
 
+/**
+ * @return void
+ */
 function register_qm_collectors_debug_bar() {
 
 	global $debug_bar;
 
-	if ( class_exists( 'Debug_Bar' ) || qm_debug_bar_being_activated() ) {
+	$debug_bar_exists = isset( $GLOBALS['debug_bar'] ) && ( $GLOBALS['debug_bar'] instanceof Debug_Bar );
+
+	if ( $debug_bar_exists || qm_debug_bar_being_activated() ) {
 		return;
 	}
 
 	$collectors = QM_Collectors::init();
-	$qm         = QueryMonitor::init();
-
-	require_once $qm->plugin_path( 'classes/debug_bar.php' );
 
 	$debug_bar = new Debug_Bar();
 	$redundant = array(
@@ -71,6 +98,9 @@ function register_qm_collectors_debug_bar() {
 
 }
 
+/**
+ * @return bool
+ */
 function qm_debug_bar_being_activated() {
 	// phpcs:disable
 

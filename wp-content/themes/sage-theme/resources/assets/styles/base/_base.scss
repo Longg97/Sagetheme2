@@ -16,12 +16,14 @@
 
   h2,
   .h2 {
-    @apply text-h2 font-bold md:text-h2-md;
+    // @apply text-h2 font-bold md:text-h2-md;
+    @apply mt-7 text-4xl font-bold leading-10 tracking-tighter;
   }
 
   h3,
   .h3 {
-    @apply text-h3 font-bold md:text-h3-md;
+    // @apply text-h3 font-bold md:text-h3-md;
+    @apply text-2xl leading-tight font-bold tracking-tighter;
   }
 
   h4,
