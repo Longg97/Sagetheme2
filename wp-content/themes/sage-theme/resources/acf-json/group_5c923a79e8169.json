@@ -60,6 +60,15 @@
                     "sub_fields": [],
                     "min": "",
                     "max": ""
+                },
+                "layout_661e17f62c21f": {
+                    "key": "layout_661e17f62c21f",
+                    "name": "home_banner",
+                    "label": "HomeBanner",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Module",
@@ -85,5 +94,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1713171860
+    "modified": 1713248246
 }

@@ -1,0 +1,31 @@
+.mod-banner {
+    @apply relative h-[700px];
+
+    picture {
+        @apply absolute w-full h-full;
+    }
+
+    .content {
+        @apply relative flex justify-end;
+    }
+
+    .text-content {
+        @apply w-[35%] pt-[10%] pr-[5%];
+    }
+
+    p {
+        @apply w-[85%] text-white;
+    }
+
+    button {
+        @apply w-[50%] h-[40px] bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 text-xs
+    }
+
+    .img-content {
+        @apply w-[50%] pt-[7%];
+    }
+
+    img {
+        @apply w-full h-full;
+    }
+}

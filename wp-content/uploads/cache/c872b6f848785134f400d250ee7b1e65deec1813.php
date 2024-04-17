@@ -1,4 +1,3 @@
-<div class="h-50"></div>
 <section class="mod-slider">
     <div class="container">
         <div class="slider">

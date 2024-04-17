@@ -1,8 +1,7 @@
 <header id="header" class="module header w-full top-0 left-0 fixed z-200 down_lg:overflow-hidden">
     <div class="container">
         <nav class="row navbar items-center">
-            <div
-                class="col w-full down_lg:flex down_lg:flex-wrap lg:w-1/5 header-mobile relative justify-between items-center">
+            <div class="col w-full down_lg:flex down_lg:flex-wrap lg:w-1/5 header-mobile relative justify-between items-center pl-[10%]">
                 <div class="lg:w-full relative">
                     <a id="header-logo" class="navbar-brand header-logo py-5 inline-block align-middle"
                         href="<?php echo App::getLogo()['href']; ?>">
@@ -23,7 +22,20 @@
 
             <div class="col w-full lg:w-4/5 navbar-collapse main-menu flex flex-col justify-between" id="main-menu"
                 data-module="menu">
-                
+                <ul class="main-menu-ul navbar-nav list-none flex mb-0 p-0 pr-[10%] text-white flex-col text-inherit lg:flex-row lg:justify-end">
+                    <li class="menu-item mb-0 w-[15%] ">
+                        <a class="block py-9 lg:p-9 no-underline" href="#">ABOUT US</a>
+                    </li>
+                    <li class="menu-item mb-0 w-[15%]">
+                        <a class="block py-9 lg:p-9 no-underline" href="#">LEADERSHIP</a>
+                    </li>
+                    <li class="menu-item mb-0 w-[15%]">
+                        <a class="block py-9 lg:p-9 no-underline" href="#">CAREERS</a>
+                    </li>
+                    <li class="active menu-item mb-0 w-[15%]">
+                        <a class="block py-9 lg:p-9 no-underline" href="#">CONTACT US</a>
+                    </li>
+                </ul>
                 <?php echo App::getMainNav(); ?>
 
             </div>

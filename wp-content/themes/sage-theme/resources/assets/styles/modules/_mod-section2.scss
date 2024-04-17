@@ -1,0 +1,25 @@
+.mod-section2 {
+    .main-title {
+        @apply 2xl:w-2/5 pr-64 down_md:w-full md:w-full;
+    }
+
+    .line {
+        @apply w-88 h-2 bg-orange-500 mb-5;
+    }
+
+    p {
+        @apply mb-40;
+    }
+
+    .content-list {
+        @apply flex flex-wrap 2xl:w-3/5 down_md:w-full md:w-full;
+    }
+
+    .content-item {
+        @apply pr-64 w-1/2 down_md:w-full;
+    }
+
+    .content-desc {
+        @apply text-lg leading-6 tracking-tight;
+    }
+}

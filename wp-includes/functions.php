@@ -4620,7 +4620,7 @@ function wp_json_file_decode( $filename, $options = array() ) {
 	}
 
 	$options      = wp_parse_args( $options, array( 'associative' => false ) );
-	$decoded_file = json_decode( file_get_contents( $filename ), $options['associative'] );
+	$decoded_file = json_decode( @file_get_contents( $filename ), $options['associative'] );
 
 	if ( JSON_ERROR_NONE !== json_last_error() ) {
 		trigger_error(
