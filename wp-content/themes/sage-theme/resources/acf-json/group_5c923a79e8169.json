@@ -69,6 +69,15 @@
                     "sub_fields": [],
                     "min": "",
                     "max": ""
+                },
+                "layout_6621cbeb0a3f5": {
+                    "key": "layout_6621cbeb0a3f5",
+                    "name": "solutions",
+                    "label": "Solutions",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Module",
@@ -94,5 +103,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1713248246
+    "modified": 1713490923
 }
