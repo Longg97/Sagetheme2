@@ -1,31 +1,34 @@
 .mod-banner {
-    @apply relative h-[700px];
+    @apply relative h-auto;
 
     picture {
         @apply absolute w-full h-full;
+
+        img {
+            @apply w-full h-full;
+        }
     }
 
     .content {
-        @apply relative flex justify-end h-full;
-    }
+        @apply relative flex flex-row gap-70 justify-end h-full;
 
-    .text-content {
-        @apply w-[35%] pt-[10%] pr-[5%];
-    }
+        .text-content {
+            @apply w-[22%] pt-[10%];
 
-    p {
-        @apply w-[85%] text-white;
-    }
+            p {
+                @apply w-[90%] text-white;
+            }
 
-    button {
-        @apply w-[50%] h-[40px] bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 text-xs
+            button {
+                @apply w-[50%] h-[40px] bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 text-xs
+            }
+        }
     }
 
     .img-content {
-        @apply w-[50%] pt-[7%];
-    }
+        @apply w-[51%] pt-[7%];
 
-    img {
-        @apply w-full h-full;
+        img {
+        }
     }
 }

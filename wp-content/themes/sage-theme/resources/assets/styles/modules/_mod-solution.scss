@@ -21,11 +21,14 @@
         }
 
         p {
-            @apply text-center text-xl leading-normal h-[220px];
+            @apply text-center text-xl leading-normal h-[300px];
         }
 
-        span {
-            @apply text-red-500;
+        a {
+            @apply p-0;
+            span {
+                @apply text-red-500;
+            }
         }
     }
 

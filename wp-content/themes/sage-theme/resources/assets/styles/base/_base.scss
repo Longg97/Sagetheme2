@@ -11,6 +11,7 @@
   }
   h1,
   .h1 {
+    // @apply text-h1 font-bold md:text-h1-md;
     @apply text-h1 font-bold md:text-h1-md text-white;
   }
 

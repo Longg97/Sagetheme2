@@ -15,7 +15,7 @@
             </button>                
         </div>
         <div class="img-content">
-            <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/banner-img.png" alt="Banner">
+            <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/banner-img.png" alt="avatar">
         </div>
     </div>
 </section>
