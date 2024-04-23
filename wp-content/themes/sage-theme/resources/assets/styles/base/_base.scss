@@ -12,7 +12,7 @@
   h1,
   .h1 {
     // @apply text-h1 font-bold md:text-h1-md;
-    @apply text-h1 font-bold md:text-h1-md text-white;
+    @apply text-55 font-bold text-white 2xl:w-[509px] down_md:w-full w-[347px] down_md:text-center;
   }
 
   h2,

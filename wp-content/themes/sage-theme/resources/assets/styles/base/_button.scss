@@ -9,4 +9,7 @@
   .btn-brown {
     @apply text-white bg-brown-100 border-brown-100 hover:bg-brown-200 hover:border-brown-200;
   }
+  .btn-banner {
+    @apply w-[242px] h-27 bg-red-500 text-white px-6 py-2 rounded-full hover:bg-white hover:text-red-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 text-xs;
+  }
 }

@@ -1,34 +1,34 @@
 .mod-banner {
-    @apply relative h-auto;
+    @apply relative;
 
-    picture {
+    picture.bg-banner {
         @apply absolute w-full h-full;
 
         img {
             @apply w-full h-full;
         }
     }
-
     .content {
-        @apply relative flex flex-row gap-70 justify-end h-full;
+        @apply relative flex flex-wrap h-full w-full;
 
         .text-content {
-            @apply w-[22%] pt-[10%];
+            @apply w-2/5 down_md:w-full pt-[10%] pl-[10%] 2xl:pl-[15%] down_md:pr-[10%] flex flex-col down_md:items-center;
 
             p {
-                @apply w-[90%] text-white;
+                @apply 2xl:w-[380px] down_md:w-full w-[370px] text-white text-xl down_md:text-center;
             }
 
             button {
-                @apply w-[50%] h-[40px] bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 text-xs
+                @apply btn-banner;
             }
         }
-    }
 
-    .img-content {
-        @apply w-[51%] pt-[7%];
+        picture.img-banner {
+            @apply flex md:w-3/5 down_md:w-full pt-[7%] justify-end;
 
-        img {
+            img {
+                @apply w-[90%];
+            }
         }
     }
 }

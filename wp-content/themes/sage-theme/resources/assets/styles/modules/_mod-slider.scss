@@ -11,8 +11,13 @@
     .arrows {
         @apply absolute bg-red-500 text-white w-25 h-28 transition-all duration-400 ease-in-out;
         top: 70%;
+
         &:hover {
-            @apply bg-white text-red-500;
+            @apply bg-white;
+
+            .icomoon {
+                @apply text-red-500;
+            }
         }
     }
 
