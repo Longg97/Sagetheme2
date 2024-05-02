@@ -9,7 +9,7 @@
     @apply bg-no-repeat bg-top bg-cover;
   }
   .container {
-    @apply mx-auto px-8 w-full;
+    @apply mx-auto px-32 w-full;
   }
 
   .transform-middle{
@@ -24,6 +24,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .box-shadow{
+    box-shadow: 0px 3px 80px rgba(182, 207, 208, 0.5);
   }
 }
 

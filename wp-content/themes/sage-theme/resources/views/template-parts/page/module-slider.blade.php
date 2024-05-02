@@ -1,6 +1,6 @@
 <section class="mod-slider">
     <div class="container">
-        <div class="slider">
+        <div class="slider box-shadow">
             <div>
                 <h2>"We've done more with Encompass in the past 6 months than we did in 3 years on our previous solusion."</h2>
                 <p>David Little</p>

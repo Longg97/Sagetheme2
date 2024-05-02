@@ -5,6 +5,7 @@ const Screens = {
   'xl': '1024px',
   '2xl': '1440px',
   '2k': '1920px',
+  'down_2xl': {'max': '1439px'},
   'down_xl': {'max': '1023px'},
   'down_lg': {'max': '991px'},
   'down_md': {'max': '767px'},

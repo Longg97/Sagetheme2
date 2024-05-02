@@ -2,16 +2,16 @@
     @apply relative;
 
     img.bg-banner {
-        @apply absolute h-[800px] xl:h-[750px] 2k:h-[1000px] object-cover;
+        @apply absolute h-[800px] xl:h-[750px] 2xl:w-full object-cover;
     }
     .content {
-        @apply relative flex flex-wrap h-full w-full;
+        @apply relative flex flex-wrap h-full w-full text-center xl:text-left;
 
         .text-content {
             @apply w-full xl:w-1/2 2k:w-2/5 pt-[10%] xl:pl-[10%] flex flex-col down_xl:items-center;
 
             p {
-                @apply w-4/5 xl:w-[90%] 2xl:w-[410px] text-white text-xl text-center xl:text-left;
+                @apply w-4/5 xl:w-[90%] 2xl:w-[410px] text-white text-xl;
             }
 
             button {
