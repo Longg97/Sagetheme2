@@ -70,7 +70,7 @@ module.exports = {
   },
   corePlugins: {
     container: false,
-    objectFit: false,
+    objectFit: true,
     objectPosition: false,
     overscrollBehavior: false,
     gridTemplateColumns: false,

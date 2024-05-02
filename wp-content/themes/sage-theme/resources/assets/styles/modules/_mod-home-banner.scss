@@ -1,21 +1,17 @@
 .mod-banner {
     @apply relative;
 
-    picture.bg-banner {
-        @apply absolute w-full h-full;
-
-        img {
-            @apply w-full h-full;
-        }
+    img.bg-banner {
+        @apply absolute h-[800px] xl:h-[750px] 2k:h-[1000px] object-cover;
     }
     .content {
         @apply relative flex flex-wrap h-full w-full;
 
         .text-content {
-            @apply w-2/5 down_md:w-full pt-[10%] pl-[10%] 2xl:pl-[15%] down_md:pr-[10%] flex flex-col down_md:items-center;
+            @apply w-full xl:w-1/2 2k:w-2/5 pt-[10%] xl:pl-[10%] flex flex-col down_xl:items-center;
 
             p {
-                @apply 2xl:w-[380px] down_md:w-full w-[370px] text-white text-xl down_md:text-center;
+                @apply w-4/5 xl:w-[90%] 2xl:w-[410px] text-white text-xl text-center xl:text-left;
             }
 
             button {
@@ -23,11 +19,11 @@
             }
         }
 
-        picture.img-banner {
-            @apply flex md:w-3/5 down_md:w-full pt-[7%] justify-end;
+        picture {
+            @apply w-full xl:w-1/2 2k:w-3/5 pt-[10%] 2xl:pt-[8%] 2k:pt-[5%] flex justify-end;
 
             img {
-                @apply w-[90%];
+                @apply w-[90%] xl:w-full;
             }
         }
     }
