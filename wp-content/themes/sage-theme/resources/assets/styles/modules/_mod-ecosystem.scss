@@ -1,0 +1,55 @@
+.mod-ecosystem {
+    @apply bg-blue-300;
+
+    .box {
+        @apply flex flex-wrap justify-center py-[5%];
+
+        h2 {
+            @apply 2xl:hidden w-[80%] xl:w-full pb-16;
+        }
+
+        .text-content {
+            @apply w-[80%] xl:w-1/2 xl:pr-[5%] 2xl:pt-16;
+            
+            h2 {
+                @apply hidden 2xl:block;
+            }
+
+            p {
+                @apply text-lg;
+            }
+        }
+
+        .slider {
+            @apply h-[500px] w-full xl:w-1/2 object-cover;
+
+            img {
+                @apply h-full mx-auto pt-16 2xl:pt-0;
+            }
+
+            .arrows {
+                @apply absolute w-25 h-28 transition-all duration-400 ease-in-out bottom-0;
+
+                &:hover {
+                    @apply bg-white;
+
+                    .icomoon {
+                        @apply text-red-500;
+                    }
+                }
+            }
+
+            .slick-prev {
+                @apply right-1/2 xl:right-[10%];
+            }
+
+            .slick-next {
+                @apply left-1/2 xl:left-[90%];
+            }
+
+            .icomoon {
+                @apply text-2xl text-red-500;
+            }
+        }
+    }
+}

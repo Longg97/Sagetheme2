@@ -1,0 +1,29 @@
+.mod-setting {
+    .content {
+        @apply flex flex-wrap w-full justify-center gap-16 xl:gap-0;
+
+        .setting-item {
+            @apply flex flex-col w-1/2 xl:w-[28%] gap-10 ;
+
+            h2 {
+                @apply text-5xl xl:text-4xl 2xl:text-5xl xl:leading-none 2xl:leading-none m-0;
+            }
+
+            img {
+                @apply w-74 h-74;
+            }
+
+            p {
+                @apply text-4xl xl:text-3xl 2xl:text-4xl leading-tight xl:leading-tight 2xl:leading-tight m-0;
+            }
+        }
+
+        .line-col {
+            @apply hidden xl:block w-[8%] pl-[4%];
+        }
+
+        .line-row {
+            @apply xl:hidden;
+        }
+    }
+}

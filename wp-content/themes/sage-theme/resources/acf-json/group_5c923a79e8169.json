@@ -87,6 +87,33 @@
                     "sub_fields": [],
                     "min": "",
                     "max": ""
+                },
+                "layout_663598e715614": {
+                    "key": "layout_663598e715614",
+                    "name": "ecosystem",
+                    "label": "Ecosystem",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6635d81e99901": {
+                    "key": "layout_6635d81e99901",
+                    "name": "setting",
+                    "label": "Setting",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6635e57923182": {
+                    "key": "layout_6635e57923182",
+                    "name": "the_lastest",
+                    "label": "The Lastest",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Module",
@@ -112,5 +139,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1713515174
+    "modified": 1714808185
 }

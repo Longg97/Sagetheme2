@@ -1,0 +1,49 @@
+.mod-the-lastest {
+    .content-lastest {
+        @apply relative flex flex-wrap gap-16;
+
+        .bg-img {
+            @apply absolute right-0;
+        }
+
+        .box-shadow {
+            @apply rounded-3xl w-full;
+
+            .text-content {
+                @apply p-20;
+
+                p {
+                    @apply text-lg;
+                }
+
+                a {
+                    @apply p-0;
+
+                    span {
+                        @apply text-red-500;
+                    }
+                }
+            }
+        }
+
+        .block-image {
+            @apply w-full 2xl:w-[55%] z-10;
+
+            h2 {
+                @apply text-lg leading-none text-red-500 w-full;
+            }
+
+            img {
+                @apply w-full;
+            }
+
+            h3 {
+                @apply text-[28px];
+            }
+        }
+
+        .block-text {
+            @apply flex flex-col gap-12 w-full 2xl:w-2/5 2xl:pt-17 z-10;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 .mod-solution {
     .box {
-        @apply w-[80%] 2xl:w-[90%] mx-auto;
+        @apply w-[90%] 2xl:w-[90%] mx-auto;
 
         .text-content {
             @apply flex flex-wrap justify-center text-center;
@@ -29,11 +29,11 @@
                 }
 
                 p {
-                    @apply text-xl leading-normal xl:h-[400px] xl:w-[160%];
+                    @apply text-xl leading-normal xl:h-[400px] 2xl:h-[300px] xl:w-[160%];
                 }
 
                 a {
-                    @apply p-0 xl:w-[160%];
+                    @apply p-0 xl:w-[180%];
 
                     span {
                         @apply text-red-500;

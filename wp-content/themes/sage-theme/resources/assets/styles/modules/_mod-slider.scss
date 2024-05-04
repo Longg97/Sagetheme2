@@ -5,29 +5,29 @@
 
     .slider {
         @apply p-[10%] rounded-3xl;
-    }
 
-    .arrows {
-        @apply absolute bg-red-500 text-white w-25 h-28 transition-all duration-400 ease-in-out top-[70%];
+        .arrows {
+            @apply absolute bg-red-500 text-white w-25 h-28 transition-all duration-400 ease-in-out top-[70%];
 
-        &:hover {
-            @apply bg-white;
+            &:hover {
+                @apply bg-white;
 
-            .icomoon {
-                @apply text-red-500;
+                .icomoon {
+                    @apply text-red-500;
+                }
             }
         }
-    }
 
-    .slick-prev {
-        @apply right-[24px];
-    }
+        .slick-prev {
+            @apply right-[24px];
+        }
 
-    .slick-next {
-        @apply right-[-25px];
-    }
+        .slick-next {
+            @apply right-[-25px];
+        }
 
-    .icomoon {
-        @apply text-2xl;
+        .icomoon {
+            @apply text-2xl;
+        }
     }
 }

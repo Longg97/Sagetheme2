@@ -12,5 +12,6 @@ import './modules/Menu';
 import './modules/Popup';
 import './modules/SelectC8';
 import './modules/SliderDemo';
+import './modules/SliderEcosystem';
 
 console.log('App Desktop')

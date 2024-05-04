@@ -1,6 +1,4 @@
 .mod-banner {
-    @apply relative;
-
     img.bg-banner {
         @apply absolute h-[800px] xl:h-[750px] 2xl:w-full object-cover;
     }
