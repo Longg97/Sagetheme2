@@ -13,5 +13,6 @@ import './modules/Popup';
 import './modules/SelectC8';
 import './modules/SliderDemo';
 import './modules/SliderEcosystem';
+import './modules/SliderTrusted';
 
 console.log('App Desktop')

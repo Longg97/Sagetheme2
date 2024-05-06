@@ -29,14 +29,6 @@
 
             .arrows {
                 @apply absolute w-25 h-28 transition-all duration-400 ease-in-out bottom-0;
-
-                &:hover {
-                    @apply bg-white;
-
-                    .icomoon {
-                        @apply text-red-500;
-                    }
-                }
             }
 
             .slick-prev {

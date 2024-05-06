@@ -1,19 +1,23 @@
 .mod-the-lastest {
     .content-lastest {
-        @apply relative flex flex-wrap gap-16;
+        @apply relative flex flex-wrap overflow-hidden;
 
         .bg-img {
-            @apply absolute right-0;
+            @apply absolute top-[-150px] xl:top-[-80px] 2xl:top-[-110px] right-[-160px];
         }
 
         .box-shadow {
-            @apply rounded-3xl w-full;
+            @apply rounded-4xl w-[90%] mx-auto mb-16 overflow-hidden;
 
             .text-content {
                 @apply p-20;
 
+                h3 {
+                    @apply leading-none;
+                }
+
                 p {
-                    @apply text-lg;
+                    @apply text-lg leading-tight;
                 }
 
                 a {
@@ -27,10 +31,14 @@
         }
 
         .block-image {
-            @apply w-full 2xl:w-[55%] z-10;
+            @apply w-full 2xl:w-[55%] relative;
 
-            h2 {
-                @apply text-lg leading-none text-red-500 w-full;
+            .top-text {
+                @apply w-[90%] mx-auto;
+
+                h2 {
+                    @apply text-lg text-red-500;
+                }
             }
 
             img {
@@ -43,7 +51,11 @@
         }
 
         .block-text {
-            @apply flex flex-col gap-12 w-full 2xl:w-2/5 2xl:pt-17 z-10;
+            @apply flex flex-col w-full 2xl:w-2/5 2xl:pt-17;
+        }
+
+        .text-content {
+            @apply bg-white;
         }
     }
 }

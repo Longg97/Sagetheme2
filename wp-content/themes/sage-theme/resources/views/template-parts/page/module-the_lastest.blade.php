@@ -3,9 +3,15 @@
         <div class="content-lastest">
             <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-the-lastest/bg-c.png" alt="Background" class="bg-img">
             <div class="block-image">
-                <h2>THE LASTEST</h2>
+                <div class="top-text">
+                    <h2>THE LASTEST</h2>
+                </div>
                 <div class="box-shadow">
-                    <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-the-lastest/img.png" alt="img">
+                    <picture>
+                        <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-the-lastest/img-1440.png" media="(min-width: 1440px)">
+                        <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-the-lastest/img-1024.png" media="(min-width: 1024px)">                
+                        <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-the-lastest/img-768.png" alt="img">
+                    </picture>
                     <div class="text-content">
                         <h3>
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy

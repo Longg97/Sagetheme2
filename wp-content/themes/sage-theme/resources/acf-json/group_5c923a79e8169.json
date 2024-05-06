@@ -114,6 +114,15 @@
                     "sub_fields": [],
                     "min": "",
                     "max": ""
+                },
+                "layout_66384b9b2bf8d": {
+                    "key": "layout_66384b9b2bf8d",
+                    "name": "trusted",
+                    "label": "Trusted",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Module",
@@ -139,5 +148,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1714808185
+    "modified": 1714965403
 }
