@@ -1,7 +1,15 @@
+.header {
+  @apply h-50 bg-blue-400;
+
+  .navbar {
+    @apply h-50;
+  }
+}
 
 .pin-header {
-  @apply bg-brown-100;
+  @apply bg-blue-400;
 }
+
 .page-home-data,
 .front-page-data,
 .error404 {
@@ -11,7 +19,7 @@
     }
 
     .main-menu-ul {
-      @apply text-brown-100;
+      @apply text-white;
     }
 
     .btn-transparent {
@@ -24,21 +32,23 @@
   }
 }
 
-
 .screenshot {
   .header {
     @apply left-auto transform-none;
   }
 }
-.header-logo{
-  max-width: 150px;
+
+.header-logo {
+  @apply max-w-200;
 }
+
 @screen down_lg {
   header {
     &::after {
       content: '';
       @apply bg-brown-100 right-0 left-0 top-0 bottom-full absolute z-a-1;
     }
+
     &.is-open-menu {
       height: calc(100% + 70px);
 

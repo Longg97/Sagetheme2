@@ -7,17 +7,17 @@
         }
 
         .box-shadow {
-            @apply rounded-4xl w-[90%] mx-auto mb-16 overflow-hidden;
+            @apply m-10 overflow-hidden;
 
             .text-content {
-                @apply p-20;
+                @apply px-19 py-15 bg-white;
 
-                h3 {
-                    @apply leading-none;
-                }
+                // h3 {
+                //     @apply leading-none;
+                // }
 
                 p {
-                    @apply text-lg leading-tight;
+                    @apply text-lg;
                 }
 
                 a {
@@ -31,7 +31,7 @@
         }
 
         .block-image {
-            @apply w-full 2xl:w-[55%] relative;
+            @apply w-full 2xl:w-3/5;
 
             .top-text {
                 @apply w-[90%] mx-auto;
@@ -48,14 +48,18 @@
             h3 {
                 @apply text-[28px];
             }
+
+            p {
+                @apply leading-none mb-10;
+            }
         }
 
         .block-text {
-            @apply flex flex-col w-full 2xl:w-2/5 2xl:pt-17;
-        }
+            @apply flex flex-col w-full 2xl:w-2/5 2xl:pt-16;
 
-        .text-content {
-            @apply bg-white;
+            h3 {
+                @apply font-normal w-[90%];
+            }
         }
     }
 }

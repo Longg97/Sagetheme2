@@ -1,9 +1,10 @@
 .mod-banner {
+    @apply border-t-1 border-gray-500;
     img.bg-banner {
         @apply absolute h-[800px] xl:h-[750px] 2xl:w-full object-cover;
     }
     .content {
-        @apply relative flex flex-wrap h-full w-full text-center xl:text-left;
+        @apply relative flex flex-wrap w-full text-center xl:text-left;
 
         .text-content {
             @apply w-full xl:w-1/2 2k:w-2/5 pt-[10%] xl:pl-[10%] flex flex-col down_xl:items-center;
