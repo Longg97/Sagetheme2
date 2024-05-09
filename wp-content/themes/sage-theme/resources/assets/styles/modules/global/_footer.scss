@@ -1,0 +1,83 @@
+.footer {
+    @apply relative overflow-hidden;
+
+    img.bg-footer {
+        @apply absolute w-full h-full;
+    }
+
+    .container {
+        @apply relative;
+
+        .group-content {
+            @apply flex down_xl:flex-col items-center text-center text-white;
+        }
+    }
+
+    ul.list-logo {
+        @apply flex flex-row gap-5 xl:gap-7 down_xl:justify-center list-none p-0 m-0 text-2xl text-red-1000;
+
+        li {
+            @apply m-0 hover:text-white;
+
+            span.icon-facebook {
+                @apply text-blue-400 rounded-full bg-red-500 hover:bg-white;
+            }
+
+            span.icon-linkedin2 {
+                @apply text-blue-400 bg-red-500 hover:bg-white;
+            }
+        }
+    }
+
+    .group-logo {
+        @apply down_xl:flex down_xl:flex-col w-full xl:w-7/20 2xl:w-1/5 items-center;
+    }
+
+    .title-logo {
+        @apply h-25;
+
+        img.logo-footer {
+            @apply h-19;
+        }
+    }
+
+    .group-text {
+        @apply flex flex-col w-full xl:w-13/20 2xl:w-4/5 items-center xl:items-end;
+    }
+
+    .text-content {
+        @apply flex flex-row w-9/10 xl:w-full items-center py-10;
+
+        span {
+            @apply w-1/3 2xl:w-1/4 text-base hover:text-red-500 hover:underline;
+        }
+    }
+
+    a {
+        @apply btn-footer;
+    }
+
+    .link-1 {
+        @apply xl:h-25;
+
+        a {
+            @apply hidden xl:block 2xl:hidden;
+        }
+    }
+
+    .link-2 {
+        @apply flex-1;
+
+        a {
+            @apply hidden 2xl:block mx-auto;
+        }
+    }
+
+    a.link-3 {
+        @apply xl:hidden;
+    }
+
+    .footer-bottom {
+        @apply text-gray-300 text-sm 2xl:text-xs py-8 down_xl:text-center;
+    }
+}

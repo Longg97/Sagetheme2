@@ -12,7 +12,8 @@ const Colors = {
   },
   gray: {
     100: '#fcf7ef',
-    200: '#F7F1E7'
+    200: '#F7F1E7',
+    300: '#909090'
   },
   blue: {
     100: '#1d4f91',
@@ -22,6 +23,9 @@ const Colors = {
   },
   orange: {
     500: '#f97316'
+  },
+  red: {
+    1000: '#E03116'
   },
   black: '#000',
   transparent: 'transparent'
