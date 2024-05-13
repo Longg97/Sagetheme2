@@ -8,9 +8,11 @@
             <p>
                 Connect & Grow Your Business with the Power of the Encompass Platform
             </p>
-            <button>
-                <span>ABOUT US</span>
-            </button>             
+            <a href="/about-us">
+                <div class="about-us">
+                    <span>ABOUT US</span>
+                </div>
+            </a>             
         </div>
         <picture>
             <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-banner/banner-1920.png" media="(min-width: 1920px)">

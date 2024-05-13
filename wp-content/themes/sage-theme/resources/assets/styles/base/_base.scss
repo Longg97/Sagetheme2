@@ -12,7 +12,7 @@
   h1,
   .h1 {
     // @apply text-h1 font-bold md:text-h1-md;
-    @apply text-55 font-bold text-white w-full 2xl:w-[509px];
+    @apply text-55 font-bold text-white pr-4 w-full 2xl:w-[509px];
   }
 
   h2,
@@ -55,7 +55,7 @@
   h4,
   h5,
   h6{
-    @apply mb-8;
+    @apply mb-7;
   }
 
   p,
