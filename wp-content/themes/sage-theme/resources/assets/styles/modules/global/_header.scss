@@ -2,7 +2,13 @@
   @apply h-50 bg-blue-400;
 
   .navbar {
-    @apply h-50;
+    @apply pt-18;
+  }
+
+  li {
+    a {
+      @apply text-lg font-semibold;
+    }
   }
 }
 
@@ -39,7 +45,7 @@
 }
 
 .header-logo {
-  @apply max-w-200;
+  @apply w-113;
 }
 
 @screen down_lg {

@@ -1,15 +1,15 @@
 @layer components {
   .col{
-    @apply px-8;
+    // @apply px-8;
   }
   .row{
-    @apply flex flex-wrap -mx-8;
+    @apply flex flex-wrap;
   }
   .bg{
     @apply bg-no-repeat bg-top bg-cover;
   }
   .container {
-    @apply mx-auto px-8 xl:px-32 w-full;
+    @apply mx-auto px-32 xl:px-51 2xl:px-62 2k:px-56 w-full;
   }
 
   .transform-middle{
