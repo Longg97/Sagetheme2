@@ -1,5 +1,5 @@
 <section class="mod-banner">
-    <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-banner/bg-1920.png" alt="Banner" class="bg-banner">
+    <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-banner/bg-banner-1920.png" alt="Banner" class="bg-banner">
     <div class="content">
         <div class="text-content">
             <h1>

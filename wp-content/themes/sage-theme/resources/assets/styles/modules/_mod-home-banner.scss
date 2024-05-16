@@ -1,8 +1,8 @@
 .mod-banner {
-    @apply border-t-1 border-gray-500;
+    @apply border-t-1 border-gray-500 min-h-350 xl:min-h-375;
 
     img.bg-banner {
-        @apply absolute min-h-350 xl:min-h-375 2xl:w-full object-cover overflow-hidden;
+        @apply absolute min-h-350 2xl:max-h-325 2k:max-h-380 2xl:w-full object-cover;
     }
 
     .content {
@@ -10,7 +10,7 @@
     }
 
     .text-content {
-        @apply w-full xl:w-[47.5%] 2xl:w-[48%] 2k:w-[49%] pt-29 xl:pt-41 2xl:pt-50 2k:pt-73 xl:pl-50 2xl:pl-73 2k:pl-187 flex flex-col down_xl:items-center;
+        @apply w-full xl:w-[47.5%] 2xl:w-48p 2k:w-49p pt-29 xl:pt-41 2xl:pt-50 2k:pt-73 xl:pl-50 2xl:pl-73 2k:pl-187 flex flex-col down_xl:items-center;
 
         p {
             @apply w-3/5 xl:w-190 2xl:w-200 text-white text-xl font-light leading-7 mb-17;
@@ -26,7 +26,7 @@
     }
 
     picture {
-        @apply w-full xl:w-[52.5%] 2xl:w-[52%] 2k:w-[51%] pt-30 xl:pt-40 2xl:pt-29 2k:pt-38 flex justify-end;
+        @apply w-full xl:w-[52.5%] 2xl:w-52p 2k:w-51p pt-30 xl:pt-40 2xl:pt-29 2k:pt-38 flex justify-end;
 
         img {
             @apply w-9/10 xl:w-full pl-3;

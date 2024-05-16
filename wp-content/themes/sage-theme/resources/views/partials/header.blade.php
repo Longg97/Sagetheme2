@@ -1,5 +1,5 @@
 <header id="header" class="module header w-full top-0 left-0 fixed z-200 down_lg:overflow-hidden">
-    <div class="container">
+    <div class="container px-32 xl:px-51 2xl:px-62 2k:px-56 w-full">
         <nav class="row navbar">
             <div class="col w-full down_xl:h-full down_lg:flex down_lg:flex-wrap lg:w-3/10 header-mobile relative justify-between">
                 <div class="lg:w-full relative">

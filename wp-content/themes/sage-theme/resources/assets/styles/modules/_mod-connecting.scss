@@ -1,8 +1,8 @@
 .mod-connecting {
-    @apply flex flex-wrap down_xl:justify-center;
+    @apply flex flex-wrap down_xl:justify-center xl:gap-9 2xl:gap-3 2k:gap-11;
 
     picture {
-        @apply w-full xl:w-3/5;
+        @apply w-full xl:w-3/5 2k:w-57p;
 
         img {
             @apply down_xl:w-full;
@@ -10,10 +10,14 @@
     }
 
     .text-content {
-        @apply flex flex-col w-[72%] xl:w-[31%] pt-[6%] 2xl:pt-[14%];
+        @apply flex flex-col w-68p xl:w-3/10 2xl:w-37p 2k:w-3/10 pt-22 xl:pt-31 2xl:pt-29 2k:pt-32 justify-center;
+
+        h2 {
+            @apply tracking-normal mb-12 xl:mb-9 2xl:mb-11 xl:pr-10;
+        }
 
         p {
-            @apply text-lg
+            @apply text-lg font-light leading-6 mb-12 xl:pr-3 2xl:pr-22 2k:pr-44;
         }
     }
 
