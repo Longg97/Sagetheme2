@@ -1,46 +1,42 @@
 .mod-ecosystem {
     @apply bg-blue-300;
 
-    .box {
-        @apply flex flex-wrap justify-center py-[5%];
+    .container {
+        @apply flex flex-wrap py-50 2xl:py-41 down_xl:pl-48 2k:pl-55 down_xl:pr-40;
 
         h2 {
-            @apply 2xl:hidden w-[80%] xl:w-full pb-16;
+            @apply 2xl:hidden w-full mb-34 xl:mb-28 down_xl:pl-16 tracking-normal;
         }
 
         .text-content {
-            @apply w-[80%] xl:w-1/2 xl:pr-[5%] 2xl:pt-16;
+            @apply w-full xl:w-[49%] 2xl:w-1/2 xl:pr-25 2xl:pr-20 2xl:pl-2 2xl:pt-16;
             
             h2 {
-                @apply hidden 2xl:block;
+                @apply hidden 2xl:block mb-10;
             }
 
             p {
-                @apply text-lg;
+                @apply text-lg font-light leading-6 mb-12 down_xl:pl-16;
             }
         }
 
         .slider {
-            @apply h-[500px] w-full xl:w-1/2 object-cover;
-
-            img {
-                @apply h-full mx-auto pt-16 2xl:pt-0;
-            }
+            @apply w-full down_xl:min-h-200 xl:w-[51%] 2xl:w-1/2 pt-41 pr-10 xl:p-0;
 
             .arrows {
-                @apply absolute w-25 h-28 transition-all duration-400 ease-in-out bottom-0;
+                @apply absolute w-25 h-28 transition-all duration-400 ease-in-out bottom-[-23px] xl:bottom-[-32px] 2xl:bottom-[-48px];
             }
 
             .slick-prev {
-                @apply right-1/2 xl:right-[10%];
+                @apply right-[53%] xl:right-29 2k:right-32;
             }
 
             .slick-next {
-                @apply left-1/2 xl:left-[90%];
+                @apply left-[52%] xl:left-[93%] 2xl:left-[95%] 2k:left-[94%];
             }
 
             .icomoon {
-                @apply text-2xl text-red-500;
+                @apply text-4xl text-red-500;
             }
         }
     }

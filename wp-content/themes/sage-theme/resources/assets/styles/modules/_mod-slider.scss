@@ -1,13 +1,21 @@
 .mod-slider {
+    .container {
+        @apply px-34 xl:px-50 xl:pr-55 2xl:px-60 2xl:pr-138;
+    }
+
+    h2 {
+        @apply tracking-normal overflow-hidden h-70 mb-20;
+    }
+
     p {
-        @apply m-0 text-gray-600 font-bold;
+        @apply m-0 text-gray-600 text-xl font-bold leading-snug;
     }
 
     .slider {
-        @apply p-[10%] rounded-3xl;
+        @apply px-18 xl:px-56 xl:pr-33 2xl:pr-125 pb-57 pt-55 rounded-5xl;
 
         .arrows {
-            @apply absolute bg-red-500 text-white w-25 h-28 transition-all duration-400 ease-in-out top-[70%];
+            @apply absolute bg-red-500 text-white w-34 h-39 transition-all duration-400 ease-in-out top-[70.5%];
 
             &:hover {
                 @apply bg-white;
@@ -19,15 +27,15 @@
         }
 
         .slick-prev {
-            @apply right-[24px];
+            @apply right-[28px];
         }
 
         .slick-next {
-            @apply right-[-25px];
+            @apply right-[-39px];
         }
 
         .icomoon {
-            @apply text-2xl;
+            @apply text-3xl p-0;
         }
     }
 }

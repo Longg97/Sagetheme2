@@ -1,32 +1,32 @@
 .mod-section2 {
     .container {
-        @apply flex flex-wrap w-[85%];
+        @apply flex flex-wrap;
     }
 
     .main-title {
-        @apply w-full 2xl:w-[45%] pb-38 xl:pb-24 2xl:pr-30;
+        @apply w-full 2xl:w-45p pb-38 xl:pb-24 2xl:pr-30;
 
         h2 {
             @apply tracking-normal
         }
 
         .line {
-            @apply w-93 h-1 bg-orange-400 mb-14;
+            @apply w-93 h-1 bg-orange-400 mb-14 ml-1;
         }
     }
 
     .content-list {
-        @apply flex flex-wrap gap-[6%] 2xl:gap-[14%] w-full 2xl:flex-1 2xl:-ml-2;
+        @apply flex flex-wrap gap-5p 2xl:gap-14p w-full 2xl:flex-1 2xl:-ml-2;
 
         .content-item {
-            @apply w-full xl:w-[46%] 2xl:w-[43%] pr-16 xl:pr-0 xl:pb-6 2xl:pb-20;
+            @apply w-full xl:w-47p 2xl:w-43p pr-16 xl:pr-0 xl:pb-6 2xl:pb-20;
 
             h3 {
                 @apply xl:min-h-30 font-semibold tracking-tight mb-4;
             }
 
             p {
-                @apply text-lg font-light leading-6 tracking-normal min-h-[128px];
+                @apply text-lg font-light leading-6 tracking-normal min-h-64;
             }
         }
     }
