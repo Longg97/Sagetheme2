@@ -1,29 +1,75 @@
 .mod-setting {
-    .content {
-        @apply flex flex-wrap w-full justify-center gap-16 xl:gap-0;
+    .container {
+        @apply flex flex-wrap pl-103 xl:pl-50 pr-97 xl:pr-55 2xl:px-60 gap-25 xl:gap-0;
 
-        .setting-item {
-            @apply flex flex-col w-1/2 xl:w-[28%] gap-10 ;
+        .setting-item-1 {
+            @apply flex flex-col w-full xl:w-32p pl-7 xl:pl-0 2xl:pt-7;
 
             h2 {
-                @apply text-5xl xl:text-4xl 2xl:text-5xl xl:leading-none 2xl:leading-none m-0;
+                @apply text-5xl xl:text-4xl 2xl:text-5xl xl:leading-none tracking-normal xl:mb-10 2xl:mb-4;
             }
 
-            img {
-                @apply w-74 h-74;
+            img.setting-1 {
+                @apply w-74 xl:w-70 h-78 xl:h-74 mb-14 xl:mb-10 2xl:mb-14 mt-7 xl:mt-8;
             }
 
             p {
-                @apply text-4xl xl:text-3xl 2xl:text-4xl leading-tight xl:leading-tight 2xl:leading-tight m-0;
+                @apply text-4xl xl:text-3xl 2xl:text-4xl leading-10 xl:leading-9 2xl:leading-12 tracking-tight m-0;
+            }
+        }
+        .setting-item-2 {
+            @apply flex flex-col w-full xl:w-32p pl-7 xl:pl-3 2xl:pl-4 2xl:pt-7;
+
+            h2 {
+                @apply text-5xl xl:text-4xl 2xl:text-5xl xl:leading-none tracking-normal xl:mb-10 2xl:mb-4 2xl:pl-3;
+            }
+
+            img.setting-2 {
+                @apply w-78 xl:w-77 h-78 xl:h-77 mb-12 xl:mb-10 2xl:mb-13 mt-7 xl:mt-6;
+            }
+
+            p {
+                @apply text-4xl xl:text-3xl 2xl:text-4xl leading-10 xl:leading-9 2xl:leading-12 tracking-tight 2xl:pl-3 m-0;
+            }
+        }
+        .setting-item-3 {
+            @apply flex flex-col w-full xl:w-26p pl-7 xl:pl-1 2xl:pl-3 2xl:pt-7;
+
+            h2 {
+                @apply text-5xl xl:text-4xl 2xl:text-5xl xl:leading-none tracking-normal xl:pl-1 2xl:pl-2 xl:mb-9 2xl:mb-4;
+            }
+
+            img.setting-3 {
+                @apply w-74 h-89 mb-8 xl:mb-5 2xl:mb-8 mt-7 xl:mt-0 xl:ml-4;
+            }
+
+            p {
+                @apply text-4xl xl:text-3xl 2xl:text-4xl leading-10 xl:leading-9 2xl:leading-12 2k:leading-11 tracking-tight 2xl:pl-1 m-0;
             }
         }
 
-        .line-col {
-            @apply hidden xl:block w-[8%] pl-[4%];
+        .line-col-1 {
+            @apply hidden xl:block w-5p mt-4 2xl:m-0 pl-3 2xl:pl-7;
+
+            img {
+                @apply 2xl:h-177
+            }
         }
 
-        .line-row {
-            @apply xl:hidden w-1/2;
+        .line-col-2 {
+            @apply hidden xl:block w-5p mt-4 2xl:m-0 pl-2 2xl:pl-5 2k:pl-0;
+
+            img {
+                @apply 2xl:h-177
+            }
+        }
+
+        .line-row-1 {
+            @apply xl:hidden w-full;
+        }
+
+        .line-row-2 {
+            @apply xl:hidden w-full pt-5 pb-3;
         }
     }
 }

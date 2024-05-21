@@ -1,64 +1,88 @@
-.mod-the-lastest {
-    .content-lastest {
-        @apply relative flex flex-wrap overflow-hidden;
+.mod-the-latest {
+    .container {
+        @apply relative flex flex-wrap overflow-hidden px-33 xl:pl-50 xl:pr-52 2xl:px-60;        
+    }
 
-        .bg-img {
-            @apply absolute top-[-150px] xl:top-[-80px] 2xl:top-[-110px] right-[-160px];
-        }
+    .bg-img {
+        @apply absolute top-[-150px] xl:top-[-80px] 2xl:top-[-110px] right-[-160px] z-0;
+    }
 
-        .box-shadow {
-            @apply m-10 overflow-hidden;
+    .box-shadow {
+        @apply overflow-hidden mb-18 xl:mb-10;
 
-            .text-content {
-                @apply px-19 py-15 bg-white;
-
-                // h3 {
-                //     @apply leading-none;
-                // }
-
-                p {
-                    @apply text-lg;
-                }
-
-                a {
-                    @apply p-0;
-
-                    span {
-                        @apply text-red-500;
-                    }
-                }
-            }
-        }
-
-        .block-image {
-            @apply w-full 2xl:w-3/5;
-
-            .top-text {
-                @apply w-[90%] mx-auto;
-
-                h2 {
-                    @apply text-lg text-red-500;
-                }
-            }
-
-            img {
-                @apply w-full;
-            }
-
-            h3 {
-                @apply text-[28px];
-            }
+        .text-content {
+            @apply px-19 py-15 bg-white;
 
             p {
-                @apply leading-none mb-10;
+                @apply text-lg font-light leading-6;
+            }
+
+            a {
+                @apply p-0;
+
+                span {
+                    @apply text-red-500;
+                }
             }
         }
+    }
 
-        .block-text {
-            @apply flex flex-col w-full 2xl:w-2/5 2xl:pt-16;
+    .block-image {
+        @apply w-full 2xl:w-3/5 mb-1 z-1 2xl:pr-14;
 
-            h3 {
-                @apply font-normal w-[90%];
+        h2 {
+            @apply text-lg tracking-tight text-red-500 mb-10 xl:mb-12 2xl:mb-10;
+        }
+
+        img {
+            @apply w-full;
+        }
+
+        h3 {
+            @apply text-2xl5 tracking-normal mb-5;
+        }
+        
+        p {
+            @apply mb-9 xl:mb-19 2xl:mb-7;
+        }
+
+        a {
+            @apply text-base;
+
+            span.text {
+                @apply pl-1;
+            }
+        }
+    }
+
+    .block-text {
+        @apply flex flex-col w-full 2xl:w-2/5 2xl:pt-27 2xl:pr-5;
+
+        .text-content-1 {
+            @apply px-19 2xl:pr-16 py-15 xl:pt-32 2xl:pt-16 bg-white;
+        }
+
+        .text-content-2 {
+            @apply px-19 2xl:pr-16 py-15 xl:pt-32 2xl:pt-18 bg-white;
+        }
+
+        h3 {
+            @apply font-semibold tracking-tight mb-17 xl:mb-7 2xl:mb-2;
+        }
+
+        p {
+            @apply mb-20 xl:mb-29 2xl:mb-18 text-lg font-light leading-6;
+        }
+
+        a {
+            @apply text-base p-0;
+
+            span.text {
+                @apply pl-1;
+            }
+
+            span {
+                @apply text-red-500;
             }
         }
     }

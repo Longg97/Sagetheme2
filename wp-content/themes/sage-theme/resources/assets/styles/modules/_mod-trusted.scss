@@ -1,28 +1,32 @@
 .mod-trusted {
     .container {
-        @apply flex flex-col gap-10 text-center;
+        @apply flex flex-col px-20 gap-7 text-center;
 
         h2 {
-            @apply w-3/5 2xl:w-2/5 m-auto;
+            @apply w-7/10 xl:w-3/5 2xl:w-2/5 m-auto tracking-normal;
         }
     
         p {
-            @apply w-4/5 m-auto text-lg;
+            @apply pl-5 xl:p-0 xl:w-72p m-auto text-lg font-light leading-6 mb-5;
         }
     
         .slider {
-            @apply w-4/5 m-auto;
+            @apply w-93p xl:w-9/10 xl:px-6 m-auto flex items-end;
+
+            div {
+                @apply h-53;
+            }
     
             img {
                 @apply h-full mx-auto;
             }
     
             .arrows {
-                @apply absolute w-30 transition-all duration-400 ease-in-out top-0;
+                @apply absolute w-30 transition-all duration-400 ease-in-out;
             }
     
             .slick-prev {
-                @apply right-full;
+                @apply right-[99%];
             }
     
             .slick-next {

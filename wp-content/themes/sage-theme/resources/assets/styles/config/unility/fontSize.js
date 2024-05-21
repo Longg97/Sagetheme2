@@ -7,6 +7,7 @@ const fontSize = {
   lg: ['1.125rem', { lineHeight: '1.75' }],
   xl: ['1.25rem', { lineHeight: '1.75' }],
   '2xl': ['1.5rem', { lineHeight: '2' }],
+  '2xl5': ['1.75rem'],
   '3xl': ['1.875rem', { lineHeight: '2.25' }],
   '4xl': ['2.25rem', { lineHeight: '2.5' }],
   '5xl': ['3rem', { lineHeight: '1' }],
