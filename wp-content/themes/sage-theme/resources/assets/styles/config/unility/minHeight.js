@@ -11,6 +11,7 @@ const minHeight = {
   350: '700px',
   375: '750px',
   400: '800px',
+  450: '900px',
   full: '100%',
   screen: '100vh',
   banner: '456px'

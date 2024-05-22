@@ -1,8 +1,8 @@
 .mod-banner {
-    @apply border-t-1 border-gray-500 min-h-350 xl:min-h-375;
+    @apply border-t-1 border-gray-500 2k:min-h-400;
 
     img.bg-banner {
-        @apply absolute min-h-350 2xl:max-h-325 2k:max-h-380 2xl:w-full object-cover;
+        @apply absolute w-full;
     }
 
     .content {
@@ -25,7 +25,7 @@
         }
     }
 
-    picture {
+    picture.avatar {
         @apply w-full xl:w-[52.5%] 2xl:w-52p 2k:w-51p pt-30 xl:pt-40 2xl:pt-29 2k:pt-38 flex justify-end;
 
         img {

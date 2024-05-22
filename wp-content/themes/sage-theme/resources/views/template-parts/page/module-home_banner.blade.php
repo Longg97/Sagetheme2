@@ -1,5 +1,10 @@
 <section class="mod-banner">
-    <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-banner/bg-banner-1920.png" alt="Banner" class="bg-banner">
+    <picture>
+        <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-banner/bg-1920.png" media="(min-width: 1920px)">
+        <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-banner/bg-1440.png" media="(min-width: 1440px)">
+        <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-banner/bg-1024.png" media="(min-width: 1024px)">
+        <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-banner/bg-768.png" alt="Banner" class="bg-banner">
+    </picture>
     <div class="content">
         <div class="text-content">
             <h1>
@@ -14,7 +19,7 @@
                 </div>
             </a>             
         </div>
-        <picture>
+        <picture class="avatar">
             <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-banner/banner-1920.png" media="(min-width: 1920px)">
             <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-banner/banner-1440.png" media="(min-width: 1440px)">
             <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-banner/banner-1024.png" media="(min-width: 1024px)">

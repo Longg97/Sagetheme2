@@ -21,18 +21,18 @@
         }
 
         .slider {
-            @apply w-full down_xl:min-h-200 xl:w-[51%] 2xl:w-1/2 pt-41 pr-10 xl:p-0;
+            @apply w-full down_xl:min-h-200 xl:w-[51%] 2xl:w-1/2 xl:-ml-3 2xl:ml-0 pt-41 pr-10 xl:p-0 2xl:pt-2 2xl:pl-3 2k:pl-1;
 
             .arrows {
                 @apply absolute w-25 h-28 transition-all duration-400 ease-in-out bottom-[-23px] xl:bottom-[-32px] 2xl:bottom-[-48px];
             }
 
             .slick-prev {
-                @apply right-[53%] xl:right-29 2k:right-32;
+                @apply right-[53%] xl:right-26 2xl:right-29 2k:right-32;
             }
 
             .slick-next {
-                @apply left-[52%] xl:left-[93%] 2xl:left-[95%] 2k:left-[94%];
+                @apply left-[52%] xl:left-[94%] 2xl:left-[95%] 2k:left-[94%];
             }
 
             .icomoon {
