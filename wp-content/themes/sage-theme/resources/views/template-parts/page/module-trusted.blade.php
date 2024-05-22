@@ -7,41 +7,41 @@
             We are trusted by the world’s leading manufacturers, distributors, and retailers to provide the best of what technology, specifically built for the beverage and food industry, can make possible.
         </p>
         <div class="slider">
-            <div>
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-1.svg" alt="img-1">
+            <div class="img-advance">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-advance.svg" alt="img-advance">
             </div>
-            <div>
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-2.svg" alt="img-2">
+            <div class="img-firestone">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-firestone.svg" alt="img-firestone">
             </div>
-            <div>
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-3.svg" alt="img-3">
+            <div class="img-eagle">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-eagle.svg" alt="img-eagle">
             </div>
-            <div>
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-4.svg" alt="img-4">
+            <div class="img-whistlepig">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-whistlepig.svg" alt="img-whistlepig">
             </div>
-            <div>
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-5.svg" alt="img-5">
+            <div class="img-apb">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-apb.svg" alt="img-apb">
             </div>
-            <div>
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-6.svg" alt="img-6">
+            <div class="img-2towns">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-2towns.svg" alt="img-2towns">
             </div>
-            <div>
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-1.svg" alt="img-1">
+            <div class="img-advance">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-advance.svg" alt="img-advance">
             </div>
-            <div>
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-2.svg" alt="img-2">
+            <div class="img-firestone">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-firestone.svg" alt="img-firestone">
             </div>
-            <div>
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-3.svg" alt="img-3">
+            <div class="img-eagle">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-eagle.svg" alt="img-eagle">
             </div>
-            <div>
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-4.svg" alt="img-4">
+            <div class="img-whistlepig">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-whistlepig.svg" alt="img-whistlepig">
             </div>
-            <div>
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-5.svg" alt="img-5">
+            <div class="img-apb">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-apb.svg" alt="img-apb">
             </div>
-            <div>
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-6.svg" alt="img-6">
+            <div class="img-2towns">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-2towns.svg" alt="img-2towns">
             </div>
         </div>
     </div>

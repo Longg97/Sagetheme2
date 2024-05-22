@@ -1,6 +1,11 @@
 <footer id="footer" class="module footer">
-  <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/footer/bg-footer.png" alt="Background Footer" class="bg-footer">
-  <div class="h-90"></div>
+  <picture>
+    <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/footer/bg-footer-1920.png" media="(min-width: 1920px)">
+    <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/footer/bg-footer-1440.png" media="(min-width: 1440px)">
+    <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/footer/bg-footer-1024.png" media="(min-width: 1024px)">
+    <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/footer/bg-footer-768.png" alt="Background Footer" class="bg-footer">
+  </picture>
+  <div class="space-h"></div>
   <div class="container footer-top">
     <div class="group-content">
       <div class="group-logo">
@@ -8,11 +13,11 @@
           <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/footer/logo-footer.svg" alt="Logo Footer" class="logo-footer">
         </div>
         <ul class="list-logo">
-          <li><span class="icomoon icon-youtube"></span></li>
-          <li><span class="icomoon icon-instagram"></span></li>
-          <li><span class="icomoon icon-twitter"></span></li>
-          <li><span class="icomoon icon-facebook"></span></li>
-          <li><span class="icomoon icon-linkedin2"></span></li>
+          <li><div class="icomoon icon-youtube"></div></li>
+          <li><div class="icomoon icon-instagram"></div></li>
+          <li><div class="icomoon icon-twitter"></div></li>
+          <li><div class="icomoon icon-facebook"></div></li>
+          <li><div class="icomoon icon-linkedin2"></div></li>
         </ul>
       </div>
       <div class="group-text">
@@ -20,9 +25,9 @@
           <a>CONTACT</a>  
         </div>
         <div class="text-content">
-          <span>ORCHESTRA SITE</span>
-          <span>ENCOMPASS WEBSITE</span>
-          <span>HANDOFF WEBSITE</span>
+          <span class="text-1">ORCHESTRA SITE</span>
+          <span class="text-2">ENCOMPASS WEBSITE</span>
+          <span class="text-3">HANDOFF WEBSITE</span>
           <div class="link-2">
             <a>CONTACT</a>
           </div>
