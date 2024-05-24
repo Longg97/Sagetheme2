@@ -1,4 +1,6 @@
 .mod-setting {
+    @apply bg-white;
+    
     .container {
         @apply flex flex-wrap pl-103 xl:pl-50 pr-97 xl:pr-55 2xl:px-60 gap-25 xl:gap-0;
 

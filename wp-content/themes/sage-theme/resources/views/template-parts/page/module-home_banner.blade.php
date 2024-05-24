@@ -5,6 +5,7 @@
         <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-banner/bg-1024.png" media="(min-width: 1024px)">
         <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-banner/bg-768.png" alt="Banner" class="bg-banner">
     </picture>
+    <div class="space-top"></div>
     <div class="content">
         <div class="text-content">
             <h1>
@@ -13,7 +14,7 @@
             <p>
                 Connect & Grow Your Business with the Power of the Encompass Platform
             </p>
-            <a href="/about-us">
+            <a href="#" aria-label="About us">
                 <div class="about-us">
                     <span>ABOUT US</span>
                 </div>

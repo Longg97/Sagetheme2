@@ -1,7 +1,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="description" content="Đây là trang web Training FE">
   <link rel="icon" href="{{App::getFavicon()}}" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="{{App::getAppleIcon()}}">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -20,4 +21,5 @@
   @php wp_head() @endphp
   <link rel="stylesheet" id="sage/font-css" onload="if(media!='screen')media='screen'" href="{{S3_FONT}}" type="text/css" media="print" />
   {!! App::getTrackingCode('in_head') !!}
+
 </head>

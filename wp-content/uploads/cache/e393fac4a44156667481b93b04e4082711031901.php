@@ -15,9 +15,9 @@
             </p>
         </div>
         <div class="slider">
-            <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-ecosystem/slider.png" alt="slider">
-            <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-ecosystem/slider.png" alt="slider">
-            <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-ecosystem/slider.png" alt="slider">
+            <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-ecosystem/slider.png" loading="lazy" alt="slider">
+            <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-ecosystem/slider.png" loading="lazy" alt="slider">
+            <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-ecosystem/slider.png" loading="lazy" alt="slider">
         </div>
     </div>
 </section>

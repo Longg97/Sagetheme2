@@ -10,7 +10,7 @@
         </div>
         <div class="image-content">
             <div class="solution-item">
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-solution/spaceship.svg" alt="Space-ship">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-solution/spaceship.svg" loading="lazy" alt="Space-ship">
                 <h3>
                     Solutions for Manufacturers
                 </h3>
@@ -20,24 +20,24 @@
                 <p class="2k:hidden">
                     Integrate all aspects of your operations with a single source of truth for planning, purchasing, production, QC, inventory, sales, accounting, finance, and business intelligence.
                 </p>
-                <a href="/explore-orchestra" class="btn down_xl:mt-4">    
+                <a href="#" class="btn down_xl:mt-4">    
                     <span class="text">EXPLORE ORCHESTRA</span>
                     <span class="icomoon icon-chevron-right"></span>
                 </a>
             </div>
 
             <div class="dot-col">
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-solution/dot-col.svg" alt="Dot-col">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-solution/dot-col.svg" loading="lazy" alt="Dot-col">
             </div>
             <div class="dot-row">
                 <picture>
                     <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-solution/dot-row-1440.svg" media="(min-width: 1440px)">
-                    <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-solution/dot-row-1024.svg" alt="Dot-row">
+                    <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-solution/dot-row-1024.svg" loading="lazy" alt="Dot-row">
                 </picture>
             </div>
 
             <div class="solution-item">
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-solution/virus-red.svg" alt="Virus-red">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-solution/virus-red.svg" loading="lazy" alt="Virus-red">
                 <h3>
                     Solutions for Distributors
                 </h3>
@@ -47,7 +47,7 @@
                 <p class="2k:hidden">
                     Increase operational efficiency and manage growth effectively with products like warehouse management, sales execution, logistics, warehouse automation, retailer ordering, business intelligence, and more.
                 </p>
-                <a href="/explore-encompass-cloud" class="btn down_xl:-mt-3">    
+                <a href="#" class="btn down_xl:-mt-3">    
                     <span class="text">EXPLORE ENCOMPASS CLOUD</span>
                     <span class="icomoon icon-chevron-right"></span>
                 </a>
@@ -55,17 +55,17 @@
             </div>
 
             <div class="dot-col">
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-solution/dot-col.svg" alt="Dot-col">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-solution/dot-col.svg" loading="lazy" alt="Dot-col">
             </div>
             <div class="dot-row">
                 <picture>
                     <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-solution/dot-row-1440.svg" media="(min-width: 1440px)">
-                    <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-solution/dot-row-1024.svg" alt="Dot-row">
+                    <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-solution/dot-row-1024.svg" loading="lazy" alt="Dot-row">
                 </picture>
             </div>
             
             <div class="solution-item">
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-solution/store-line.svg" alt="Store-line">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-solution/store-line.svg" loading="lazy" alt="Store-line">
                 <h3 class="down_xl:mt-2">
                     Solutions for Retailers
                 </h3>
@@ -75,7 +75,7 @@
                 <p class="2k:hidden">
                     Run a more efficient business by optimizing interactions with your distributors and customers with solutions like online ordering, retail eCommerce websites, delivery applications, and more.
                 </p>
-                <a href="/explore-retail-solutions" class="btn down_xl:-mt-2">    
+                <a href="#" class="btn down_xl:-mt-2">    
                     <span class="text">EXPLORE RETAIL SOLUTIONS</span>
                     <span class="icomoon icon-chevron-right"></span>
                 </a>

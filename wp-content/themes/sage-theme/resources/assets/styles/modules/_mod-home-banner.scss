@@ -1,8 +1,12 @@
 .mod-banner {
-    @apply border-t-1 border-gray-500 2k:min-h-400;
+    @apply 2k:min-h-400 bg-white;
 
     img.bg-banner {
         @apply absolute w-full;
+    }
+
+    .space-top {
+        @apply h-57;
     }
 
     .content {
@@ -10,7 +14,7 @@
     }
 
     .text-content {
-        @apply w-full xl:w-[47.5%] 2xl:w-48p 2k:w-49p pt-29 xl:pt-41 2xl:pt-50 2k:pt-73 xl:pl-50 2xl:pl-73 2k:pl-187 flex flex-col down_xl:items-center;
+        @apply w-full xl:w-47rp 2xl:w-48p 2k:w-49p pt-29 xl:pt-40 2xl:pt-48 2k:pt-69 xl:pl-50 2xl:pl-73 2k:pl-187 flex flex-col down_xl:items-center;
 
         p {
             @apply w-3/5 xl:w-190 2xl:w-200 text-white text-xl font-light leading-7 mb-17;
@@ -26,10 +30,10 @@
     }
 
     picture.avatar {
-        @apply w-full xl:w-[52.5%] 2xl:w-52p 2k:w-51p pt-30 xl:pt-40 2xl:pt-29 2k:pt-38 flex justify-end;
+        @apply w-full xl:w-52rp 2xl:w-52p 2k:w-51p pt-30 xl:pt-38 2xl:pt-26 2k:pt-33 flex justify-end;
 
         img {
-            @apply w-9/10 xl:w-full pl-3;
+            @apply w-9/10 xl:w-full pl-3 2xl:pl-2 2k:pl-4;
         }
     }
 }

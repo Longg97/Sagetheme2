@@ -13,8 +13,8 @@ export default class SliderDemo {
       // adaptiveHeight: true,
       infinite: false,
       draggable: false,
-      prevArrow: '<button type="button" class="slick-prev arrows"><span class="icomoon h1 icon-chevron-left"></span></button>',
-      nextArrow: '<button type="button" class="slick-next arrows"><span class="icomoon h1 icon-chevron-right"></span></button>'
+      prevArrow: '<button type="button" class="slick-prev arrows"><span class="icomoon h1 icon-chevron-left"></span><span class="sr-only">Previous Button</span></button>',
+      nextArrow: '<button type="button" class="slick-next arrows"><span class="icomoon h1 icon-chevron-right"></span><span class="sr-only">Next Button</span></button>'
     })
   }
 }

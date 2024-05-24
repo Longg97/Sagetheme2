@@ -3,14 +3,14 @@
     <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/footer/bg-footer-1920.png" media="(min-width: 1920px)">
     <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/footer/bg-footer-1440.png" media="(min-width: 1440px)">
     <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/footer/bg-footer-1024.png" media="(min-width: 1024px)">
-    <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/footer/bg-footer-768.png" alt="Background Footer" class="bg-footer">
+    <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/footer/bg-footer-768.png" loading="lazy" alt="Background Footer" class="bg-footer">
   </picture>
   <div class="space-h"></div>
   <div class="container footer-top">
     <div class="group-content">
       <div class="group-logo">
         <div class="title-logo">
-          <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/footer/logo-footer.svg" alt="Logo Footer" class="logo-footer">
+          <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/footer/logo-footer.svg" loading="lazy" alt="Logo Footer" class="logo-footer">
         </div>
         <ul class="list-logo">
           <li><div class="icomoon icon-youtube"></div></li>
@@ -22,18 +22,18 @@
       </div>
       <div class="group-text">
         <div class="link-1">
-          <a>CONTACT</a>  
+          <a href="#" class="btn" aria-label="Contact with us">CONTACT</a>  
         </div>
         <div class="text-content">
           <span class="text-1">ORCHESTRA SITE</span>
           <span class="text-2">ENCOMPASS WEBSITE</span>
           <span class="text-3">HANDOFF WEBSITE</span>
           <div class="link-2">
-            <a>CONTACT</a>
+            <a href="#" class="btn" aria-label="Contact with us">CONTACT</a>
           </div>
         </div>
       </div>
-      <a class="link-3">CONTACT</a>
+      <a href="#" class="link-3" aria-label="Contact with us">CONTACT</a>
     </div>
 
     {{-- <ul class="list-none col p-0 w-1/2 lg:w-2/3">

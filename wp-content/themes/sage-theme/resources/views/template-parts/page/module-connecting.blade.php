@@ -3,7 +3,7 @@
         <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-connecting/connect-1920.png" media="(min-width: 1920px)">
         <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-connecting/connect-1440.png" media="(min-width: 1440px)">
         <source srcset="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-connecting/connect-1024.png" media="(min-width: 1024px)">
-        <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-connecting/connect-768.png" alt="avatar">        
+        <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-connecting/connect-768.png" loading="lazy" alt="avatar">        
     </picture>
     <div class="text-content">
         <h2>

@@ -8,40 +8,40 @@
         </p>
         <div class="slider">
             <div class="img-advance">
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-advance.svg" alt="img-advance">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-advance.svg" loading="lazy" alt="img-advance">
             </div>
             <div class="img-firestone">
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-firestone.svg" alt="img-firestone">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-firestone.svg" loading="lazy" alt="img-firestone">
             </div>
             <div class="img-eagle">
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-eagle.svg" alt="img-eagle">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-eagle.svg" loading="lazy" alt="img-eagle">
             </div>
             <div class="img-whistlepig">
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-whistlepig.svg" alt="img-whistlepig">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-whistlepig.svg" loading="lazy" alt="img-whistlepig">
             </div>
             <div class="img-apb">
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-apb.svg" alt="img-apb">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-apb.svg" loading="lazy" alt="img-apb">
             </div>
             <div class="img-2towns">
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-2towns.svg" alt="img-2towns">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-2towns.svg" loading="lazy" alt="img-2towns">
             </div>
             <div class="img-advance">
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-advance.svg" alt="img-advance">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-advance.svg" loading="lazy" alt="img-advance">
             </div>
             <div class="img-firestone">
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-firestone.svg" alt="img-firestone">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-firestone.svg" loading="lazy" alt="img-firestone">
             </div>
             <div class="img-eagle">
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-eagle.svg" alt="img-eagle">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-eagle.svg" loading="lazy" alt="img-eagle">
             </div>
             <div class="img-whistlepig">
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-whistlepig.svg" alt="img-whistlepig">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-whistlepig.svg" loading="lazy" alt="img-whistlepig">
             </div>
             <div class="img-apb">
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-apb.svg" alt="img-apb">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-apb.svg" loading="lazy" alt="img-apb">
             </div>
             <div class="img-2towns">
-                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-2towns.svg" alt="img-2towns">
+                <img src="<?php echo TEMPLATE_ASSETS_URL; ?>/images/md-trusted/img-2towns.svg" loading="lazy" alt="img-2towns">
             </div>
         </div>
     </div>

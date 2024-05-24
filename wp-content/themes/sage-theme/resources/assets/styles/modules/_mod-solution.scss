@@ -1,4 +1,6 @@
 .mod-solution {
+    @apply bg-white;
+    
     .container {
         @apply 2xl:w-9/10 2k:w-67p px-32 xl:px-51 2xl:px-62 2k:px-56 w-full;
         .text-content {

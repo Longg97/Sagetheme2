@@ -1,4 +1,6 @@
 .mod-the-latest {
+    @apply bg-white;
+    
     .container {
         @apply relative flex flex-wrap overflow-hidden px-33 xl:pl-50 xl:pr-52 2xl:px-60;        
     }

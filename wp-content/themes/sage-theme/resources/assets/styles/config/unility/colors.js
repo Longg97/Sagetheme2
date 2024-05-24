@@ -26,7 +26,7 @@ const Colors = {
     500: '#f97316'
   },
   red: {
-    1000: '#E03116'
+    500: '#E03116'
   },
   black: '#000',
   transparent: 'transparent'

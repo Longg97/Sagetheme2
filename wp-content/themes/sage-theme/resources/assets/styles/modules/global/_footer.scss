@@ -2,7 +2,7 @@
     @apply relative overflow-hidden;
 
     .space-h {
-        @apply h-86 xl:h-98 2xl:h-117 2k:h-112;
+        @apply h-86 xl:h-98 2xl:h-117 2k:h-112 bg-white;
     }
 
     img.bg-footer {
@@ -18,7 +18,7 @@
     }
 
     ul.list-logo {
-        @apply flex flex-row h-12 gap-6 xl:gap-7 down_xl:justify-center list-none p-0 m-0 text-2xl text-red-1000;
+        @apply flex flex-row h-12 gap-6 xl:gap-7 down_xl:justify-center list-none p-0 m-0 text-2xl text-red-500;
 
         li {
             @apply hover:text-white;

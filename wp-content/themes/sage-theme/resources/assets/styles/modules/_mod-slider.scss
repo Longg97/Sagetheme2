@@ -1,4 +1,6 @@
 .mod-slider {
+    @apply bg-white;
+    
     .container {
         @apply px-34 xl:px-50 xl:pr-55 2xl:px-60 2xl:pr-138;
     }
