@@ -13,7 +13,7 @@
     @apply w-121 h-27 bg-red-500 text-white rounded-full hover:bg-white hover:text-red-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50;
   }
   .btn-connect {
-    @apply w-121 h-27 bg-red-500 text-white rounded-full hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 text-base font-semibold leading-11 tracking-wider;
+    @apply w-121 h-27 bg-red-500 text-white rounded-full hover:bg-gray-200 hover:text-red-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 text-base font-semibold leading-11 tracking-wider;
   }
   .btn-footer {
     @apply w-102 h-24 border-1 border-white pl-29 py-5 rounded-full hover:bg-white hover:text-red-500 text-base font-extrabold;

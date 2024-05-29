@@ -39,7 +39,7 @@
                 @apply p-0 xl:w-180p text-base;
 
                 span {
-                    @apply text-red-500;
+                    @apply text-red-500 hover:underline;
                 }
             }
         }

@@ -23,7 +23,7 @@
                 @apply p-0;
 
                 span {
-                    @apply text-red-500;
+                    @apply text-red-500 hover:underline;
                 }
             }
         }
@@ -52,7 +52,7 @@
             @apply text-base;
 
             span.text {
-                @apply pl-1;
+                @apply pl-1 hover:underline;
             }
         }
     }
@@ -84,7 +84,7 @@
             }
 
             span {
-                @apply text-red-500;
+                @apply text-red-500 hover:underline;
             }
         }
     }
